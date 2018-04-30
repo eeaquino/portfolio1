@@ -1,0 +1,11 @@
+$primary-color: #141e30;
+$secondary-color: #243b55;
+$thrid-color: #28526f;
+$light-color: #4d7089;
+@mixin color-gradient {
+    background: #141E30; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $secondary-blue, $primary-blue); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $secondary-blue, $primary-blue);
+    color: white;
+}
+

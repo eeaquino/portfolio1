@@ -1,0 +1,25 @@
+body{
+	height:100%;
+	width:100%;
+	font-size:62.5%;
+	margin:0px;
+    padding:0px;
+}
+body *{
+	font-family: 'Ubuntu', sans-serif!important;	
+}
+header,main,footer,.main--container{
+	width:100%;
+    box-sizing: border-box;
+}
+
+.main-container{
+	display:flex;
+	flex-direction: column;
+}
+.inner-container{
+    width:100%;
+	max-width:1366px;
+	margin: 0 auto;
+}
+
