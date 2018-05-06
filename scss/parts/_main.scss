@@ -9,7 +9,6 @@ main{
         &:before,&:after {
             background-color: #aaa;
             content: "";
-            display: inline-block;
             height: 3px;
             position: relative;
             vertical-align: middle;
@@ -53,8 +52,9 @@ main{
             ul{
                 list-style-type: none;
                 padding:0px;
+                display:flex;
+                flex-wrap: wrap;
                 li{
-                    display:inline-block;
                     background-color:#EEE;
                     padding:5px;
                     margin:3px;
@@ -70,14 +70,13 @@ main{
             margin-top:auto;
         }
         a{
-            display:block;
             clear:both;
             border-radius: 5px;
             padding:5px;
             background-color: $light-color;
             color:#fff;
             text-decoration: none;
-            width:100%;
+            width:calc(100% - 10px);
         }
         .note{            
             color:#aaa;           
