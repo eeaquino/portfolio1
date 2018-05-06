@@ -102,7 +102,6 @@ body {
  main h2:before, main h2:after {
      background-color: #aaa;
      content: "";
-     display: inline-block;
      height: 3px;
      position: relative;
      vertical-align: middle;
@@ -147,9 +146,10 @@ body {
  main .card .showcase ul {
      list-style-type: none;
      padding: 0px;
+     display: flex;
+     flex-wrap: wrap;
 }
  main .card .showcase ul li {
-     display: inline-block;
      background-color: #EEE;
      padding: 5px;
      margin: 3px;
@@ -163,14 +163,13 @@ body {
      margin-top: auto;
 }
  main .card a {
-     display: block;
      clear: both;
      border-radius: 5px;
      padding: 5px;
      background-color: #4d7089;
      color: #fff;
      text-decoration: none;
-     width: 100%;
+     width: calc(100% - 10px);
 }
  main .card .note {
      color: #aaa;
